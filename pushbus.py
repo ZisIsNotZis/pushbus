@@ -1,7 +1,9 @@
 """A small, dependency-free push bus.
 
-The module retains the original ``subpub``/``pub`` convenience API and also
-exposes :class:`PushBus` for applications that need an independent bus.
+Register callbacks against regex input paths with :meth:`PushBus.subscribe`,
+push values with :meth:`PushBus.publish` (alias ``pub``), and let the bus
+buffer, join, and re-publish results. No global state is involved: each
+:class:`PushBus` instance is an independent bus.
 """
 from __future__ import annotations
 
