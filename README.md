@@ -10,6 +10,8 @@ A push-based routing bus for Python: values arrive on named paths, get joined by
 
 `pushbus` is one module. You decorate plain Python functions; the bus owns the buffering, the joining, the timers, and the counters. Threading and async remain yours: the bus never starts a scheduler of its own.
 
+**Completed.** Accepted scope: the dependency-free Python routing bus described in [PLAN.md](PLAN.md). [Verification and limits](COMPLETION.md).
+
 ## Quick start
 
 ```sh
